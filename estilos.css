@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+body {
+    background-color:tan;
+    display: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.introanimation {
+
+    max-height: auto;
+    max-width: 150px;
+    animation-name: Introanimalogo;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.introanimation img {
+
+    height: 200px;
+    max-width: auto;
+}
+
+img {
+
+    width: 250px;
+    height: 250px;
+}
+
+
+#contenido {
+
+    background-color: lightseagreen;
+    height: 60%;
+    width: 60%;
+    align-items: center;
+    margin-left: 2%;
+    
+}
+
+a {
+
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 10px 10px 10px 10px;
+    background:wheat;
+    margin-left: 5px;
+}
+
+aside {
+    background-color:rgb(143, 9, 148);
+    margin-left: 70%;
+    margin-top: -95%;
+    width: 30%;
+    height: 70%;
+
+}
+
+aside img {
+
+    width: 100px;
+    height: 100px;
+}
+ 
+nav {
+    background: black;
+    margin-left: 0%;
+}
+.introcontenido {
+
+    width: 200px;
+    padding:2em 1em 1em 1em; 
+
+}
+
+.secondintro {
+
+    width: 200px;
+    padding:2em 1em 1em 1em; 
+}
+
+
+.introcontenido img {
+    margin-left:auto;
+    display:block;  
+    transform: scale(0.9);
+    transition: all 4s ease; 
+}
+
+
+.introcontenido:hover {
+    background-color: rgba(200,200,200,.5);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 2%;
+}
+  
+.introcontenido:hover img {
+transform: scale(1);     
+}  
+
+
+.secondintro img {
+    margin:auto;
+    display:block;  
+    transform: scale(0.9);
+    transition: all 2s ease; 
+}
+
+
+.secondintro:hover {
+    background-color: rgba(200,200,200,.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.secondintro:hover img {
+transform: scale(1);     
+}  
+
+
+@keyframes Introanimalogo {
+    from {
+		margin-right:100%;
+    }
+
+    50% {}
+
+
+    to {
+		margin-left:80%;
+    }
+}
+
+@media screen and (min-width: 230px) and (max-width: 800px)
+    {
+        body {
+            display: center;
+            justify-content: center;
+            align-content: center;
+        }
+        .contenido {
+
+            width:100%;
+    
+    
+        }
+        nav {
+            float:none;
+            width:100%;
+        }
+        nav a {
+            display: block;
+            color:#000;
+        }
+        .introcontenido {
+            border-top: solid black 0.1em;
+            float:none;
+            width:100%;
+            margin-left:0;
+        }
+
+        .secondintro {
+            border-top: solid black 0.1em;
+            float:none;
+            padding: 0.9em;
+            width:100%;
+            margin-left:0;
+
+        }
+        aside {
+            float:none;
+            margin-top: -150%;
+        
+        }
+
+        aside img {
+
+            width: 150px;
+            height: 150px;
+        }
+
+        .introanimation {
+
+            float: center;
+            width: 100%;
+            margin-left:0;
+            margin-right: 0;
+            animation-name: Introanimalogo;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+    }
+
+
+
+    
