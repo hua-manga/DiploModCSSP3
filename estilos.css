@@ -1,26 +1,28 @@
 @charset "utf-8";
 
 body {
-    background-color:tan;
+    background-color:rgb(209, 138, 45);
     display: center;
     justify-content: center;
     align-content: center;
 
 }
 
-.introanimation {
-
-    max-height: auto;
-    max-width: 150px;
-    animation-name: Introanimalogo;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-.introanimation img {
+.logo {
 
     height: 200px;
-    max-width: auto;
+    width: 1000px;
+    animation-name: Introanimalogo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    display: fixed;
+}
+
+header {
+
+ width: 100%;
+ overflow: hidden;
+ float: none;
 }
 
 img {
@@ -123,14 +125,14 @@ transform: scale(1);
 
 @keyframes Introanimalogo {
     from {
-		margin-right:100%;
+		margin-right:50%;
     }
 
     50% {}
 
 
     to {
-		margin-left:80%;
+		margin-left:10%;
     }
 }
 
@@ -172,7 +174,7 @@ transform: scale(1);
         }
         aside {
             float:none;
-            margin-top: -150%;
+            margin-top: -220%;
         
         }
 
@@ -182,14 +184,13 @@ transform: scale(1);
             height: 150px;
         }
 
-        .introanimation {
+        .logo {
 
-            float: center;
-            width: 100%;
-            margin-left:0;
+            width:370px;
+            margin-right:0;
             margin-right: 0;
             animation-name: Introanimalogo;
-            animation-duration: 5s;
+            animation-duration: 3s;
             animation-fill-mode: forwards;
         }
 
